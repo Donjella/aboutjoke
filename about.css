@@ -1,0 +1,118 @@
+main a {
+    color: var(--primary-link);
+}
+
+
+#article-1 {
+    color: var(--primary-text);
+    font-weight: 600;
+}
+
+#article-1 h1 {
+    font-size: 4rem;
+}
+
+#hover-resume:hover {
+ text-decoration: solid underline #f72585 4px;
+ text-underline-offset: 8px;
+ transform: scale(1.2);
+ display: inline-block;
+ text-underline-offset: 8px;
+}
+
+#about-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+    border: solid 2px var(--primary-color);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--primary-background);
+    text-align: center;
+    max-width: 80vw;
+}
+
+#about-container h1 {
+    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    
+}
+
+#about-container p {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+#about-contact {
+    text-align: center;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 18px;
+    font-weight: 800;
+}
+
+aside {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+#message-top{
+    display: block;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+#message-top:hover {
+    transform: scale(1.1);
+    text-underline-offset: 8px;
+}
+
+.fa-3x {
+    animation: 1.3s infinite;
+    display:inline-block;
+}
+
+.fa-3x:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform:translateY(-20px);
+    }
+    100% {
+        transform:translateY(0);
+    }
+}
+
+/* Start responsive design - About - Tablet */
+@media screen and (min-width: 768px) {
+    #about-container {
+        padding: 10px;
+        height: 40vh;
+    }
+
+    #about-container h1 {
+        font-size: 2rem;
+    }
+
+    #about-container p, aside p {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Start responsive design - About - Desktop */
+@media screen and (min-width: 1025px) {
+    #message-top:hover {
+        transform: scale(1.5);
+    }
+    
+}
