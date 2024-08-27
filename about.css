@@ -32,7 +32,7 @@ main a {
     background-color: var(--primary-background);
     text-align: center;
     max-width: 80vw;
-    min-height: 50vh;
+    min-height: 80vh;
 }
 
 #about-container h1 {
