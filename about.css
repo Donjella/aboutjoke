@@ -22,7 +22,7 @@ main a {
 
 #about-container {
     display: grid;
-    grid-template-rows: 150px 210px;  
+    grid-template-rows: 150px 180px;  
     justify-content: center;
     align-items: center;
     margin: 20px auto 0;
@@ -95,7 +95,7 @@ aside {
 /* Start responsive design - About - Tablet */
 @media screen and (min-width: 768px) {
     #about-container {
-        grid-template-rows: 150px 210px;  
+        grid-template-rows: 150px 200px;  
         padding: 8px;
     }
 
@@ -118,7 +118,7 @@ aside {
     #about-container {
         min-height: 30vh;
         row-gap: 0px;
-        padding: 8px;
+        grid-template-rows: 150px 160px;  
     }
 
 }
