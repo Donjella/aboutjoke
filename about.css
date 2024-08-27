@@ -22,7 +22,7 @@ main a {
 
 #about-container {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto;  
     justify-content: center;
     align-items: center;
     margin: 20px auto 0;
@@ -95,8 +95,9 @@ aside {
 /* Start responsive design - About - Tablet */
 @media screen and (min-width: 768px) {
     #about-container {
-        padding: 10px;
-        height: 40vh;
+        min-height: 50vh;
+        row-gap: 0px;
+        padding: 8px;
     }
 
     #about-container h1 {
@@ -115,4 +116,10 @@ aside {
         transform: scale(1.5);
     }
     
+    #about-container {
+        min-height: 30vh;
+        row-gap: 0px;
+        padding: 8px;
+    }
+
 }
